@@ -1,28 +1,38 @@
 window.onload = () => {
-    // Search bar
-    let isSearchBarOpen = false;  
-    let searchHook = document.querySelector('.search-hook')
-    let searchBar = document.querySelector('.search-bar')
-    let searchBarCloseButton = document.querySelector('.close-search-bar')
-
-    const searchBarToggler = () => {
-        searchBar.classList.toggle('disabled')
-        searchHook.classList.toggle('disabled')
-    }
-    
-    searchHook.addEventListener('click', () => {
-        searchBarToggler()
-    })
-
-    searchBarCloseButton.addEventListener('click', () => {
-        searchBarToggler()
-    })
+    let summary = []
+    let articlesWrapper = document.querySelector('.articles-wrapper')
 
     const getSummary = async() => {
         await fetch('../files-summary.json')
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => summary.push(data))
     }
 
-    console.log(getSummary())
+    const renderSummary = async() => {
+    await getSummary()
+
+    summary[0].forEach(article => {
+        let element = document.createElement('article')
+        element.classList.add('article-wrapper')
+
+        let title = document.createElement('h2')
+        title.innerHTML = article.title
+        title.classList.add('article-title')
+
+        let excerpt = document.createElement('p')
+        excerpt.innerHTML = article.excerpt
+        excerpt.classList.add('article-excerpt')
+
+        let link = document.createElement('a')
+        link.setAttribute('href', `./content/${article.filename}`)
+        link.innerHTML = 'Leer más'
+
+        element.appendChild(title)
+        element.appendChild(excerpt)
+        element.appendChild(link)
+        articlesWrapper.appendChild(element)
+    })
+    }
+
+    renderSummary()
 }

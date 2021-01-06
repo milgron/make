@@ -74,20 +74,25 @@ header a {
   padding: 2rem;
 }
 
-.articles-wrapper article {
+.article-wrapper {
+  margin: 2rem 0;
   text-align: center;
 }
 
-.articles-wrapper article h2 {
+.articles-wrapper .article-wrapper {
+  text-align: center;
+}
+
+.articles-wrapper .article-wrapper h2 {
   font-size: 2.4rem;
 }
 
-.articles-wrapper article p {
+.articles-wrapper .article-wrapper p {
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
-.articles-wrapper article a {
+.articles-wrapper .article-wrapper a {
   font-size: 1.4rem;
   color: inherit;
 }
