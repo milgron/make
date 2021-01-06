@@ -1,0 +1,23 @@
+{
+  "name": "lagranmesa",
+  "version": "1.0.0",
+  "description": "Scripts para la gran mesa",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "read": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milgron/lagranmesa.git"
+  },
+  "author": "milgron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milgron/lagranmesa/issues"
+  },
+  "homepage": "https://github.com/milgron/lagranmesa#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
