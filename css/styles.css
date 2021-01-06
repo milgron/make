@@ -1,12 +1,124 @@
-@font-face {
-  font-family: Vollkorn;
-  src: url('../static/Vollkorn-Regular.ttf');
+a,p,span,button,h1,h2,h3,h4 {
+  font-family: 'Times New Roman', Times, serif;
 }
 
-a,p,span,button,h1,h2,h3,h4 {
-  font-family: Vollkorn;
+p {
+  line-height: 1.5;
 }
 
 h1 {
-  font-size: 24px;   
+  font-size: 2.4rem;;   
+}
+
+header { 
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.author {
+  font-size: 1.4rem;
+}
+
+.search-bar-wrapper {
+  position: relative;
+}
+
+.search-bar-wrapper > * {
+  transition: all 400ms ease-in-out;
+}
+
+.search-bar-wrapper .search-hook {
+  font-size: 1.4rem;
+  margin: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search-bar-wrapper .search-bar:not(.disabled) { 
+  transform: translateY(-20px);
+}
+
+.search-bar-wrapper > .disabled {
+  opacity: 0;
+}
+
+.search-bar { 
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar-input {
+  margin: 0 1rem;
+}
+
+.close-search-bar {
+  border: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+
+.articles-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 920px;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.articles-wrapper article {
+  text-align: center;
+}
+
+.articles-wrapper article h2 {
+  font-size: 2.4rem;
+}
+
+.articles-wrapper article p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.articles-wrapper article a {
+  font-size: 1.4rem;
+  color: inherit;
+}
+
+footer { 
+  text-align: center;
+  position: relative;
+  margin-top: 4rem;
+}
+
+footer::before {
+  position: absolute;
+  content: '';
+  top: -1rem;
+  left: 0;
+  right: 0;
+  width: 100px;
+  margin: auto;
+  height: 1px;
+  background: #000;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  transition: all 400ms ease-in-out;
+}
+
+footer a:hover { 
+  color: blue;
+  transition: all 400ms ease-in-out;
 }
