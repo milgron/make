@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/milgron/lagranmesa#readme",
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "marked": "^1.2.7"
   }
 }

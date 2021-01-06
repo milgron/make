@@ -17,4 +17,12 @@ window.onload = () => {
     searchBarCloseButton.addEventListener('click', () => {
         searchBarToggler()
     })
+
+    const getSummary = async() => {
+        await fetch('../files-summary.json')
+        .then(response => response.json())
+        .then(data => console.log(data))
+    }
+
+    console.log(getSummary())
 }
