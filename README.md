@@ -1,4 +1,4 @@
-# Make 0.1 (Beta)
+# Make 0.1 (Recontra Beta)
 
 ## Description
 
@@ -38,14 +38,14 @@ yarn
 4 - Put your .md files inside the ./content dir. This is the file structure:
 
 ```markdown
-1 | ---
-2 | title: This is the title of the post
-3 | ---
-4 | excerpt: This is a content preview for the post 
-5 | ---
-6 | 
-7 | # Hola mundo!
-8 | ¡Este es un post de prueba!
+---
+title: This is the title of the post
+---
+excerpt: This is a content preview for the post 
+---
+
+# Hola mundo!
+¡Este es un post de prueba!
 [...]
 ```
 
