@@ -97,6 +97,18 @@ header a {
   color: inherit;
 }
 
+.post-title {
+  margin-bottom: 2rem;
+}
+
+.article-content {
+  margin-top: 2rem;
+}
+
+.article-content p {
+  font-size: 1.6rem;
+}
+
 footer { 
   text-align: center;
   position: relative;
@@ -126,4 +138,9 @@ footer a {
 footer a:hover { 
   color: blue;
   transition: all 400ms ease-in-out;
+}
+
+body.dark-mode {
+  background: #181a22;
+  color: white;
 }

@@ -24,7 +24,7 @@ window.onload = () => {
         excerpt.classList.add('article-excerpt')
 
         let link = document.createElement('a')
-        link.setAttribute('href', `./content/${article.filename}`)
+        link.setAttribute('href', `./${article.filename}`)
         link.innerHTML = 'Leer más'
 
         element.appendChild(title)
